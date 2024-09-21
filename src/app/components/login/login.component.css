@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.back-arrow {
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
