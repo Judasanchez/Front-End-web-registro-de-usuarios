@@ -3,6 +3,7 @@ import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { RegisterComponent } from './components/register/register.component';
 import { MainComponent } from './components/main/main.component';
+import { CitaComponent } from './components/cita/cita.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/main', pathMatch: 'full' },
@@ -18,5 +19,9 @@ export const routes: Routes = [
     {
         path: 'register',
         component: RegisterComponent
+    },
+    {
+        path: 'citas',
+        component: CitaComponent
     }
 ];
