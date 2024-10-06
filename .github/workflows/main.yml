@@ -21,7 +21,6 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Checkout
       - uses: actions/checkout@v4
 
       #Setup NodeJS
@@ -30,10 +29,8 @@ jobs:
         with:
             node-version: "18"
       # install dependencies
-      - name: Install dependencies
       - run:  npm i
       # build app for production
-      - name: build app bundle 
       - run: npm run build:prod
 
       # deploy guthubpages
