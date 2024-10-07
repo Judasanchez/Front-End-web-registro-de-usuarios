@@ -33,8 +33,6 @@ jobs:
       # build app for production
       - run: npm run build:prod
 
-      - run: npm run build:ssr
-
       - run: cp server.js dist/poli-angular/
       # deploy guthubpages
       - name: GitHub Pages
