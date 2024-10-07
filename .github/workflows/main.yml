@@ -33,7 +33,7 @@ jobs:
       # build app for production
       - run: npm run build:prod
 
-      - run: cp server.js dist/poli-angular/
+      - run: cp server.ts dist/poli-angular/
       # deploy guthubpages
       - name: GitHub Pages
         uses: crazy-max/ghaction-github-pages@v4.0.0
