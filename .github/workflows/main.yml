@@ -32,7 +32,7 @@ jobs:
       - run:  npm ci
 
       # Install angular cli
-      - run: npm install -g @Angular/cli
+      - run: npm install -g @angular/cli
 
       # build app for production
       - run: ng build --base-href /Front-End-web-registro-de-usuarios/
