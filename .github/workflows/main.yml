@@ -32,8 +32,10 @@ jobs:
       - run:  npm i
       # build app for production
       - run: npm run build:prod
-      #Rename index route success
 
+      - run: npm run build:ssr
+
+      - run: cp server.js dist/poli-angular/
       # deploy guthubpages
       - name: GitHub Pages
         uses: crazy-max/ghaction-github-pages@v4.0.0
