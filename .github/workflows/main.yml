@@ -33,7 +33,7 @@ jobs:
       # build app for production
       - run: npm run build:prod
       #Rename index route success
-      - run: mv dist/poli-angular/index.html dist/poli-angular/404.html
+      - run: mv dist/Front-End-web-registro-de-usuarios/index.html dist/Front-End-web-registro-de-usuarios/404.html
 
       # deploy guthubpages
       - name: GitHub Pages
