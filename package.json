@@ -7,8 +7,7 @@
     "build": "ng build",
     "build:prod": "ng build --configuration production --base-href /Front-End-web-registro-de-usuarios/",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:poli-angular": "node dist/poli-angular/server/server.mjs"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
