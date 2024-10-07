@@ -32,10 +32,7 @@ jobs:
       - run:  npm i
       # build app for production
       - run: npm run build:prod
-      # ssr
-      - run: npm run build:ssr
       #Rename index route success
-      - run: mv dist/poli-angular/browser/index.csr.html dist/poli-angular/browser/index.html
 
       # deploy guthubpages
       - name: GitHub Pages
