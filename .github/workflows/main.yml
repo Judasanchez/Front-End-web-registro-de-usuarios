@@ -29,11 +29,14 @@ jobs:
         with:
             node-version: "18"
       # install dependencies
-      - run:  npm i
-      # build app for production
-      - run: npm run build:prod
+      - run:  npm ci
 
-      - run: cp server.ts dist/poli-angular/
+      # Install angular cli
+      - run: npm install -g @Angular/cli
+
+      # build app for production
+      - run: ng build --base-href /Front-End-web-registro-de-usuarios/
+
       # deploy guthubpages
       - name: GitHub Pages
         uses: crazy-max/ghaction-github-pages@v4.0.0
