@@ -1,0 +1,9 @@
+{
+  "routes": [
+    "/citas",
+    "/dashboard",
+    "/login",
+    "/main",
+    "/register"
+  ]
+}
